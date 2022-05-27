@@ -8,6 +8,11 @@ lib/chromedriver.log
 lib/bin
 lib/screenshots
 
+.classpath
+.DS_Store
+.settings/
+.project
+
 HELP.md
 .gradle
 /build/
