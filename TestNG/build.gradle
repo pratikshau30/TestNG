@@ -23,13 +23,8 @@ dependencies {
 // Additional config for Crio workspace
 buildDir = '/tmp/external_build'
 
-// task startScript(type:Exec) {
-//     commandLine '../selenium-run.sh'
-// }
-
-// run.dependsOn startScript
-
-// test.dependsOn startScript
-
+test {
+    useTestNG() {}
+}
 
 mainClassName = 'testNG_1.Derived'
