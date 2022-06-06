@@ -2,8 +2,6 @@ plugins {
     id 'java'
 }
 
-
-
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'application'
@@ -19,11 +17,6 @@ repositories {
 }
 
 dependencies {
-    // testCompile group: 'junit', name: 'junit', version: '4.12'
-    // implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
-    // implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-1'
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation group: 'org.testng', name: 'testng', version: '7.6.0'
 
 }
 
@@ -38,8 +31,5 @@ buildDir = '/tmp/external_build'
 
 // test.dependsOn startScript
 
-test {
-    useTestNG()
-}
 
-mainClassName = 'testNG_1.Library'
+mainClassName = 'testNG_1.Derived'
