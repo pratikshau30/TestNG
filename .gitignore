@@ -18,6 +18,7 @@ HELP.md
 /build/
 */build/
 /bin/
+*/.gradle/
 */bin/
 !gradle/wrapper/gradle-wrapper.jar
 *.log
