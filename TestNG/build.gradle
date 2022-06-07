@@ -18,8 +18,6 @@ repositories {
 
 dependencies {
     // TODO: Add latest gradle dependency
-    // https://mvnrepository.com/artifact/org.testng/testng
-testImplementation group: 'org.testng', name: 'testng', version: '7.6.0'
 
 }
 
@@ -28,11 +26,8 @@ buildDir = '/tmp/external_build'
 
 test {
     // TODO: Add configuration to use TestNG instead of JUnit
-    useTestNG() {
-        // suites "src/test/java/testng.xml"
-    }
 
-    // Configuration to print test summary
+    // Configurations to print test summary
     afterSuite { desc, result ->
             if (!desc.parent) {
                 println "\nTEST RESULT: ${result.resultType}"
