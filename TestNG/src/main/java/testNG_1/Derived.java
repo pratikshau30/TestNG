@@ -4,7 +4,7 @@ package testNG_1;
 class Derived extends Base {
 
     @Override
-    public void display(int x) {
+    public void display() {
         // Print statement when this method is called
         System.out.println("Derived display(int)");
     }

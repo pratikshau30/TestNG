@@ -1,12 +1,11 @@
 package testcaseswithtestng;
 
-import org.testng.annotations.Test;
-
 import pages.SearchPage;
 
+import org.testng.annotations.Test;
+
 public class SearchTest extends BaseTest{
-	
-	@Test
+	@Test (priority = 2,groups = {"P2"})
 	public void verifySearchProduct() {
 		SearchPage searchPage = new SearchPage();
 		searchPage.searchProduct("Iphone-13");

@@ -1,18 +1,17 @@
 package testcaseswithtestng;
 
-import org.testng.annotations.Test;
-
 import pages.ProductReviewPage;
 
-public class ProductReviewTest extends BaseTest{
+import org.testng.annotations.Test;
 
-	@Test
+public class ProductReviewTest extends BaseTest{
+	@Test (priority = 2,groups = {"P2"})
 	public void verifyAddingReview() {
 		ProductReviewPage productReviewPage = new ProductReviewPage();
 		productReviewPage.addProductReview("Good");
 	}
-	
-	@Test
+
+	@Test (priority = 2,groups = {"P2"})
 	public void verifyEditReview() {
 		ProductReviewPage productReviewPage = new ProductReviewPage();
 		productReviewPage.editProductReview("Excellent");

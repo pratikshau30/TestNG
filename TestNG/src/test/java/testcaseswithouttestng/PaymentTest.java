@@ -1,12 +1,14 @@
 package testcaseswithouttestng;
 
+import pages.PaymentPage;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import pages.PaymentPage;
+import org.testng.annotations.Test;
 
 public class PaymentTest extends BaseTest{
-	
+
 	public void verifyPaymentByCreditCart() {
 		PaymentPage paymentPage = new PaymentPage();
 		Map<String,String> creditCartDetails = new HashMap<>();

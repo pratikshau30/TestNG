@@ -1,20 +1,18 @@
 package testcaseswithtestng;
 
-
+import pages.OrderCancellationPage;
 
 import org.testng.annotations.Test;
 
-import pages.OrderCancellationPage;
-
 public class OrderCancellationTest extends BaseTest{
 	
-	@Test
+	@Test (priority = 1,groups = {"P1"})
 	public void verifyProductCancellation() {
 		OrderCancellationPage orderCancellationPage = new OrderCancellationPage();
 		orderCancellationPage.orderCancellation("order_987684");
 	}
-	
-	@Test
+
+	@Test (priority = 1,groups = {"P1"}, dependsOnMethods = "verifyProductCancellation", enabled=false)
 	public void verifyOrderReturn() {
 		OrderCancellationPage orderCancellationPage = new OrderCancellationPage();
 		orderCancellationPage.returnOrder("order_987684");

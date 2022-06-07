@@ -1,12 +1,11 @@
 package testcaseswithtestng;
 
-import org.testng.annotations.Test;
-
 import pages.OrderHistoryPage;
 
-public class OrderHistroyTest extends BaseTest{
+import org.testng.annotations.Test;
 
-	@Test
+public class OrderHistoryTest extends BaseTest {
+	@Test (priority = 1,groups = {"P1"})
 	public void viewOrderHistory() {
 		OrderHistoryPage orderHistoryPage = new OrderHistoryPage();
 		orderHistoryPage.orderHistory("12");
