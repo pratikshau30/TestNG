@@ -8,7 +8,7 @@ public class ProductReviewTest extends BaseTest{
 		ProductReviewPage productReviewPage = new ProductReviewPage();
 		productReviewPage.addProductReview("Good");
 	}
-	
+
 	public void verifyEditReview() {
 		ProductReviewPage productReviewPage = new ProductReviewPage();
 		productReviewPage.editProductReview("Excellent");
