@@ -8,7 +8,7 @@ import java.util.Map;
 import org.testng.annotations.Test;
 
 public class PaymentTest extends BaseTest{
-
+@Test(description = "Verify placing order using Credit Card",priority = 1)
 	public void verifyPaymentByCreditCart() {
 		PaymentPage paymentPage = new PaymentPage();
 		Map<String,String> creditCartDetails = new HashMap<>();
@@ -18,7 +18,7 @@ public class PaymentTest extends BaseTest{
 		creditCartDetails.put("amount", "1200");
 		paymentPage.payByCreditCard(creditCartDetails);
 	}
-	
+	@Test(description = "Verify placing order using Debit Card",priority = 1)
 	public void verifyPaymentByDebitCart() {
 		PaymentPage paymentPage = new PaymentPage();
 		Map<String,String> debitCartDetails = new HashMap<>();
